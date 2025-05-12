@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Page</title>
+    <style>
+        #message {
+            color: darkblue;
+            font-size: 20px;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        #dynamic-list {
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px dashed gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="message">Welcome to the Interactive Page!</h1>
+    </header>
+
+    <section>
+        <p>This is a paragraph element demonstrating text manipulation using JavaScript.</p>
+        <button onclick="changeText()">Change Heading Text</button>
+        <button onclick="toggleHighlight()">Toggle Highlight</button>
+        <button onclick="addOrRemoveElement()">Add/Remove List Item</button>
+    </section>
+
+    <article>
+        <h2>Dynamic List</h2>
+        <ul id="dynamic-list">
+            <li>Initial Item</li>
+        </ul>
+    </article>
+
+    <footer>
+        <small>&copy; 2025 DOM Demo</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
